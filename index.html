@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OmniConvert - Convertisseur d’unités</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Convertisseur d’unités complet et gratuit. Convertissez longueur, poids, température, volume, temps et plus." />
+</head>
+  <!-- contenu de ton site ici -->
+
+  <!-- POP-UP -->
+  <div id="popup" style="display:none; position:fixed; bottom:20px; right:20px; background:#005f73; color:white; padding:15px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.2);">
+    ✨ Tu veux changer ? Ce pack ne te donne pas des excuses, il te donne des résultats?<br />
+    <a href="https://payhip.com/b/9UVIO" target="_blank" style="color:#ffd166;">PACK TRANSFORMATION 360°</a>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('popup').style.display = 'block';
+    }, 7000);
+  </script>
+</body>
+<body>
+    <div style="background:#e63946; color:white; text-align:center; padding:10px; position:fixed; top:0; width:100%; z-index:999;">
+   Tu n’es pas folle, tes hormones sont juste en crise — voici la solution: <a href="https://payhip.com/b/c860u" target="_blank" style="color:#fff; text-decoration:underline;">Bye douleurs, acné & fatigue</a>
+</div>
+<!-- Ajoute ce style dans ton <body> juste après l'ouverture -->
+<div style="height:40px;"></div> <!-- Décalage à cause de la bannière fixe -->
+  <header>
+    <h1>OmniConvert</h1>
+    <nav>
+      <ul>
+        <li><a href="#length">Longueur</a></li>
+        <li><a href="#weight">Poids</a></li>
+        <li><a href="#temperature">Température</a></li>
+        <li><a href="#volume">Volume</a></li>
+        <li><a href="#time">Temps</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="length" class="converter-section">
+      <h2>Conversion de longueur</h2>
+      <div class="converter">
+        <input type="number" id="length-input" placeholder="Entrer la valeur" />
+        <select id="length-from">
+          <option value="m">Mètre (m)</option>
+          <option value="km">Kilomètre (km)</option>
+          <option value="cm">Centimètre (cm)</option>
+          <option value="mm">Millimètre (mm)</option>
+          <option value="inch">Pouce (in)</option>
+          <option value="ft">Pied (ft)</option>
+          <option value="yd">Yard (yd)</option>
+          <option value="mile">Mile (mi)</option>
+        </select>
+        <select id="length-to">
+          <option value="m">Mètre (m)</option>
+          <option value="km">Kilomètre (km)</option>
+          <option value="cm">Centimètre (cm)</option>
+          <option value="mm">Millimètre (mm)</option>
+          <option value="inch">Pouce (in)</option>
+          <option value="ft">Pied (ft)</option>
+          <option value="yd">Yard (yd)</option>
+          <option value="mile">Mile (mi)</option>
+        </select>
+        <button onclick="convertLength()">Convertir</button>
+      </div>
+      <p id="length-result"></p>
+    </section>
+
+    <!-- Tu peux copier-coller cette section et adapter pour poids, température, volume, temps -->
+
+    <section id="weight" class="converter-section">
+      <h2>Conversion de poids</h2>
+      <div class="converter">
+        <input type="number" id="weight-input" placeholder="Entrer la valeur" />
+        <select id="weight-from">
+          <option value="kg">Kilogramme (kg)</option>
+          <option value="g">Gramme (g)</option>
+          <option value="mg">Milligramme (mg)</option>
+          <option value="lb">Livre (lb)</option>
+          <option value="oz">Once (oz)</option>
+        </select>
+        <select id="weight-to">
+          <option value="kg">Kilogramme (kg)</option>
+          <option value="g">Gramme (g)</option>
+          <option value="mg">Milligramme (mg)</option>
+          <option value="lb">Livre (lb)</option>
+          <option value="oz">Once (oz)</option>
+        </select>
+        <button onclick="convertWeight()">Convertir</button>
+      </div>
+      <p id="weight-result"></p>
+      <div style="text-align:center; margin-top:20px;">
+  <a href="https://payhip.com/b/cCZKJ" target="_blank" style="background:#0a9396; padding:10px 20px; color:white; text-decoration:none; border-radius:5px;">
+Marre de te priver ? Et si tu perdais du poids en mangeant avec plaisir ?
+
+
+  </a>
+</div>
+
+    </section>
+
+    <!-- Idem pour température, volume, temps -->
+
+  </main>
+
+  <footer>
+    <p>© 2025 UnitConvert Clone - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
