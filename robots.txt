@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://voluble-monstera-59591f.netlify.app/sitemap.xml
+
+
